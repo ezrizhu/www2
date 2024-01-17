@@ -85,7 +85,7 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a target="_blank" href="https://glauca.digital/" {
                                     img src="/assets/img/badges/glauca.gif" alt="Glauca Digital";
                                 }
-                                a target="_blank" href="https://xenyth.net/" {
+                                a target="_blank" href="https://xenyth.net/?affid=3" {
                                     img src="/assets/img/badges/xenyth.png" alt="xenyth cloud";
                                 }
                                 img src="/assets/img/badges/aperture_labs.jpg" alt="aperture_labs";
