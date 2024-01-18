@@ -14,6 +14,7 @@ use serde::{Deserialize, Serialize};
 use tower_http::services::ServeDir;
 mod site;
 mod update;
+mod ssh;
 
 async fn health() -> Html<String> {
     Html(String::from("OK"))
@@ -103,6 +104,7 @@ async fn main() {
         .nest_service("/assets", get_service(ServeDir::new("./assets")))
         .route("/health", get(health))
         .route("/", get(site::home::home))
+        .route("/ssh", get(ssh::sshpub))
         .with_state(state)
         .layer(middleware::from_fn(cachepolicy));
 
