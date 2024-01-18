@@ -3,8 +3,12 @@ use tokio::sync::RwLock;
 use log::{info, error};
 use axum::{
     response::Html,
+    response::Response,
+    middleware::{self, Next},
     routing::{get, get_service},
-    Router
+    Router,
+    http::header::HeaderMap,
+    http::Request,
 };
 use serde::{Deserialize, Serialize};
 use tower_http::services::ServeDir;
@@ -99,7 +103,8 @@ async fn main() {
         .nest_service("/assets", get_service(ServeDir::new("./assets")))
         .route("/health", get(health))
         .route("/", get(site::home::home))
-        .with_state(state);
+        .with_state(state)
+        .layer(middleware::from_fn(cachepolicy));
 
     axum::Server::bind(&"0.0.0.0:3000".parse().expect("Invalid address"))
         .serve(app.into_make_service())
@@ -107,3 +112,11 @@ async fn main() {
         .expect("Server failed");
 }
 
+async fn cachepolicy<B>(req: Request<B>, next: Next<B>) -> (HeaderMap, Response) {
+    let mut resp_header = HeaderMap::new();
+    if req.uri().path().starts_with("/assets") {
+        resp_header.insert("Cache-Control", "max-age=86400".parse().unwrap());
+    }
+    let response = next.run(req).await;
+    (resp_header, response)
+}
