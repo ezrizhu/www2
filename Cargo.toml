@@ -13,7 +13,7 @@ env_logger = "0.10.1"
 log = "0.4.20"
 maud = { version = "0.25.0", features = ["axum"] }
 rand = "0.8.5"
-reqwest = "0.11.23"
+reqwest = { version = "0.11.23", features = ["rustls-tls"], default-features = false }
 serde = { version = "1.0.194", features = ["derive"] }
 serde_json = "1.0.110"
 tokio = { version = "1.35.1", features = ["full"] }
