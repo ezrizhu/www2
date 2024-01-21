@@ -26,11 +26,11 @@ ENV CT=${CT}
 ENV TZ="America/New_York"
 
 # Copy the binary from the build stage
-COPY --from=builder /target/release/www /usr/local/bin/www
+COPY --from=builder /target/release/www2 /usr/local/bin/www2
 
 COPY ./assets /usr/local/bin/assets
 
 # Set the command to run the binary
 WORKDIR /usr/local/bin
-CMD ["www"]
+CMD ["www2"]
 EXPOSE 3000
