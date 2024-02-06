@@ -112,6 +112,9 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a target="_blank" href="https://fediring.net" {
                                     img src="/assets/img/badges/fediring.gif" alt="fediring";
                                 }
+                                a target="_blank" href="https://whats-th.is" {
+                                    img src="/assets/img/badges/owo.gif" alt="owo";
+                                }
                                 iframe src="//incr.easrng.net/badge?key=ezripet" style="background: url(//incr.easrng.net/bg.gif)" title="increment badge" width="88" height="31" frameborder="0" {};
                             }
 
