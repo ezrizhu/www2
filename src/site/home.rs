@@ -90,8 +90,8 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
                     }
                     br;
                     b { "pronouns.page: " }
-                    a target="_blank" href="https://en.pronouns.page/@finnekit" {
-                        "@finnekit"
+                    a target="_blank" href="https://en.pronouns.page/@ezrieh" {
+                        "@ezrieh"
                     }
                     br;
                     b { "Telegram: " }
