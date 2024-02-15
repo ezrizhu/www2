@@ -64,8 +64,8 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
                     }
                     br;
                     b { "Twitter: " }
-                    a rel="me" target="_blank" href="https://twitter.com/finnekit" {
-                        "@finnekit"
+                    a rel="me" target="_blank" href="https://twitter.com/0xEzri" {
+                        "@0xEzri"
                     }
                     br;
                     b { "BSky: " }
