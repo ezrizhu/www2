@@ -109,7 +109,7 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
             div class="pure-u-1 pure-u-md-1-2" {
                 h3 { "Discord" }
                 p {
-                    "Username: finnekit"
+                    "Username: ezrieh"
                         br;
                     "Custom status: " (discord.custom_status)
                         br;
