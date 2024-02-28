@@ -109,6 +109,9 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a target="_blank" href="https://www.mabsland.com/Adoption.html" {
                                     img src="/assets/img/badges/Censor_PGc.gif" alt="Censorship Panda: PG";
                                 }
+                                a target="_blank" href="https://eightyeightthirty.one/#ezri.pet" {
+                                    img src="/assets/img/badges/eightyeightthirtyone.png" alt="eightyeightthirtyone";
+                                }
                                 a target="_blank" href="https://yesterweb.org/no-to-web3/" {
                                     img src="/assets/img/badges/roly-saynotoweb3.gif" alt="say no to web3";
                                 }
