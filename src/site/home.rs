@@ -81,9 +81,11 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
             }
             div class="pure-u-1 pure-u-md-1-2" {
                 p {
-                    b { "Location: " }
-                    "NYC"
-                        br;
+                    b { "Signal: " }
+                    a rel="me" target="_blank" href="https://signal.me/#eu/ZhPPlw2hqcjo2BO1QEmD-XxMfVCtCG5n8gOLmV4yxpPcsBuJZFJBqblyOvo7XrOM" {
+                        "ezri.01"
+                    }
+                    br;
                     b { "Email: " }
                     a target="_blank" href="mailto:me@ezri.pet" {
                         "me@ezri.pet"
