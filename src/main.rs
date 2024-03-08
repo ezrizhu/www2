@@ -15,6 +15,7 @@ use tower_http::services::ServeDir;
 mod site;
 mod update;
 mod ssh;
+mod atproto;
 
 async fn health() -> Html<String> {
     Html(String::from("OK"))
@@ -105,6 +106,7 @@ async fn main() {
         .route("/health", get(health))
         .route("/", get(site::home::home))
         .route("/ssh", get(ssh::sshpub))
+        .route("/.well-known/atproto-did", get(atproto::did))
         .with_state(state)
         .layer(middleware::from_fn(cachepolicy));
 
