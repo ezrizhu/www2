@@ -87,8 +87,8 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a target="_blank" href="https://pixilic.com/" {
                                     img src="/assets/img/badges/hunter.png" alt="hunter";
                                 }
-                                a target="_blank" href="https://arciniega.one/" {
-                                    img src="/assets/img/badges/solely.png" alt="solely";
+                                a target="_blank" href="https://sapphic.moe/" {
+                                    img src="/assets/img/badges/sapphic.png" alt="Sapphic Angels";
                                 }
                                 a target="_blank" href="https://tilde.town/" {
                                     img src="/assets/img/badges/tildetownpink.gif" alt="tilde.town";
