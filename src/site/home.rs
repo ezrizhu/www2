@@ -38,7 +38,6 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
                     img class="flag" src="/assets/img/Pansexual.webp" alt="Pansexual flag";
                 }
                 p { "I am a computer science student that runs a small hosting service with its own ASN. I currently work in academia as a research assistant." }
-                p { "This website is a more casual version of my " a target="_blank" href="https://ezrizhu.com" { "professional website" } "." }
             }
             div class="pure-u-1 pure-u-md-1-3 hero-img" {
                 a target="_blank" href="https://toyhou.se/finnekit" {
