@@ -1,14 +1,14 @@
 body {
-  background-color: var(--pink);
-  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 1rem;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  max-width: 75ch;
+    background-color: var(--pink);
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 75ch;
 }
 
 p {
@@ -114,10 +114,35 @@ img {
 }
 
 :root {
-  --white: #f8f7f6;
-  --pearl: #eae2da;
-  --wafer: #dbc6c0;
-  --brown: #a99b94;
-  --blue: #cbc9d4;
-  --pink: #f7b8c6;
+    --white: #f8f7f6;
+    --pearl: #eae2da;
+    --wafer: #dbc6c0;
+    --brown: #a99b94;
+    --blue: #cbc9d4;
+    --pink: #f7b8c6;
+}
+
+#prideflag img {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 120px;
+    transform-origin: 100% 0%;
+    transition: transform .5s cubic-bezier(.32,1.63,.41,1.01);
+    z-index: 8008135;
+}
+#prideflag img:hover {
+    transform: scale(110%);
+}
+#prideflag img:active {
+    transform: scale(110%);
+}
+#prideflag img * {
+    pointer-events: all;
+}
+#prideflag img {
+    width: unset;
+    height: unset;
+    border-radius: unset;
+    margin-right: unset;
 }

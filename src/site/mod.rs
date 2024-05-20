@@ -41,6 +41,7 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
 
                 body {
                     div class="main" {
+                        div id="prideflag" { a href="https://www.hrw.org/topic/lgbt-rights" target="_blank" { img src="/assets/img/pride.svg"; } }
                         (content);
                         div class="footer" {
                             p {
@@ -130,7 +131,7 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 "Source code "
                                 a target="_blank" href="https://github.com/ezrizhu/www2" { "available here" }
                                 ", released under the "
-                                a target="_blank" href="https://github.com/ezrizhu/www2/blob/main/COPYING" { "GNU AGPLv3 license" }
+                                a target="_blank" href="https://github.com/ezrizhu/www2/blob/main/COPYING" { "GNU AGPLv3 license." }
                                 br;
                                 "All opinions here are my own and do not reflect the views of my employers or university: future, past, and present."
                                 br;
