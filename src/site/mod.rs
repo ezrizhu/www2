@@ -41,7 +41,7 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
 
                 body {
                     div class="main" {
-                        div id="prideflag" { a href="https://www.hrw.org/topic/lgbt-rights" target="_blank" { img src="/assets/img/pride.svg"; } }
+                        a id="prideflag" href="https://www.hrw.org/topic/lgbt-rights" target="_blank" { img src="/assets/img/pride.svg" alt="progressive pride flag"; }
                         (content);
                         div class="footer" {
                             p {
