@@ -18,6 +18,9 @@ pub async fn update(state: Arc<RwLock<SiteState>>) -> Result<()> {
     let cloud_json = reqwest::get("http://api.ezri.pet/ezricloud").await?.text().await?;
     state.cloud = serde_json::from_str(&cloud_json)?;
 
+    let val_text = reqwest::get("http://api.ezri.pet/val.text").await?.text().await?;
+    state.val = val_text;
+
     let last_updated_text = String::from(chrono::Local::now().format("%Y-%m-%d %H:%M:%S").to_string().as_str());
     state.last_updated = last_updated_text;
 

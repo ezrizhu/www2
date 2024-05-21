@@ -52,6 +52,7 @@ pub struct Cloud {
 #[derive(Clone)]
 pub struct SiteState {
     workstation: String,
+    val: String,
     last_updated: String,
     steam: Steam,
     discord: Discord,
@@ -65,6 +66,7 @@ async fn main() {
 
     let state = Arc::new(RwLock::new(SiteState {
         workstation: String::from(""),
+        val: String::from(""),
         last_updated: String::from(""),
         steam: Steam {
             persona_state: String::from(""),

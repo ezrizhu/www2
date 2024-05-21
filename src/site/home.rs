@@ -9,19 +9,20 @@ use super::base;
 pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
     let state = state.read().await;
     let workstation = state.workstation.clone();
+    let val = state.val.clone();
     let steam = state.steam.clone();
     let discord = state.discord.clone();
     let cloud = state.cloud.clone();
 
     /*
-    let mut rng = rand::thread_rng();
-    let (img, img_link, artist) = match rng.gen_range(0..3) {
-        0 => ("ezri.webp", "https://v3ss33l.crd.co/", "V3SS33L"),
-        1 => ("pixel.webp", "https://toyhou.se/StandbySnail", "StandbySnail"),
-        2 => ("blueberry.webp", "https://koiwypher.uwu.ai/#/", "Wypher"),
-        _ => unreachable!(),
-    };
-    */
+       let mut rng = rand::thread_rng();
+       let (img, img_link, artist) = match rng.gen_range(0..3) {
+       0 => ("ezri.webp", "https://v3ss33l.crd.co/", "V3SS33L"),
+       1 => ("pixel.webp", "https://toyhou.se/StandbySnail", "StandbySnail"),
+       2 => ("blueberry.webp", "https://koiwypher.uwu.ai/#/", "Wypher"),
+       _ => unreachable!(),
+       };
+       */
 
     let (img, img_link, artist) = ("ezri.webp", "https://v3ss33l.crd.co/", "V3SS33L");
 
@@ -140,6 +141,13 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
             }
 
             div class="pure-u-1 pure-u-md-1-2" {
+                h3 { "Valorant Stats" }
+                p {
+                    pre { (val) };
+                }
+            }
+
+            div class="pure-u-1 pure-u-md-1-2" {
                 h3 { "Steam" }
                 p {
                     "Profile: " a target="_blank" href=(steam.profile_url) { (steam.persona_name) }
@@ -153,25 +161,29 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
                     "Last log off: " (steam.last_logoff)
                 }
             }
+
+            div class="pure-u-1 pure-u-md-1-2" {
+                h3 { "EzriCloud" }
+                p {
+                    "AS: 206628"
+                        br;
+                    "Status: "
+                        @if cloud.is_down {
+                            "Down since" (cloud.down_since)
+                        } @else {
+                            "All systems operational"
+                        }
+                    br;
+                    "nic-hdl: EZRI-RIPE, ZHUEZ-ARIN"
+                }
+            }
+
         }
 
 
         h3 { "Workstation status" }
         pre { (workstation) };
 
-        h3 { "EzriCloud" }
-        p {
-            "AS: 206628"
-                br;
-            "Status: "
-                @if cloud.is_down {
-                    "Down since" (cloud.down_since)
-                } @else {
-                    "All systems operational"
-                }
-            br;
-            "nic-hdl: EZRI-RIPE, ZHUEZ-ARIN"
-        }
     };
 
     base(content, state.clone())
