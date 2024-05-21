@@ -38,7 +38,9 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
                 a target="_blank" href="https://en.pronouns.page/terminology#pansexual" {
                     img class="flag" src="/assets/img/Pansexual.webp" alt="Pansexual flag";
                 }
-                p { "I am a computer science student that runs a small hosting service with its own ASN. I currently work in academia as a research assistant." }
+                p { "I am a 19 y/o computer science student from NYC that runs a small internet hosting service with its own ASN. I currently work in academia as a research assistant." }
+                p { "Feel free to have a look around this website, and I hope you have a nice rest of your day." }
+                p { "Please don't hesitate to reach out if you'd like to chat or have any questions." }
             }
             div class="pure-u-1 pure-u-md-1-3 hero-img" {
                 a target="_blank" href="https://toyhou.se/finnekit" {
@@ -141,7 +143,7 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
             }
 
             div class="pure-u-1 pure-u-md-1-2" {
-                h3 { "Valorant Stats" }
+                h3 { "Valorant" }
                 p {
                     pre { (val) };
                 }
