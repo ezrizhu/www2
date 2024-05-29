@@ -31,7 +31,7 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
     let content = html! {
         div class="pure-g hero" {
             div class="pure-u-1 pure-u-md-2-3 hero-text" {
-                h1 { "Ezri (they/any)" }
+                h1 { "Ezri" }
                 a target="_blank" href="https://en.pronouns.page/terminology#nonbinary" {
                     img class="flag" src="/assets/img/Nonbinary.webp" alt="Nonbinary flag";
                 }
