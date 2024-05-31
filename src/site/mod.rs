@@ -45,12 +45,16 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                         (content);
                         div class="footer" {
                             p {
-                                a href="https://fediring.net/previous?host=ezri.pet" { "<-" }
-                                " "
-                                a href="https://fediring.net" { "Fediring" }
-                                " "
-                                a href="https://fediring.net/next?host=ezri.pet" { "->" }
+                                a href="https://fediring.net/previous?host=ezri.pet" { "<- Prev" }
+                                " |  Fediring  | "
+                                a href="https://fediring.net/next?host=ezri.pet" { "Next ->" }
                             }
+                            p {
+                                a href="https://skylarhill.me/" { "<- Skylar" }
+                                " |  Hacker Girls  | "
+                                a href="https://nora.codes/" { "Nora ->" }
+                            }
+                            br;
                             div class="badges" {
                                 a target="_blank" href="https://ezri.pet" { 
                                     img src="/assets/img/badges/ezri.png" alt="Ezri";
@@ -116,12 +120,13 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a target="_blank" href="https://yesterweb.org/no-to-web3/" {
                                     img src="/assets/img/badges/roly-saynotoweb3.gif" alt="say no to web3";
                                 }
-                                a target="_blank" href="https://fediring.net" {
-                                    img src="/assets/img/badges/fediring.gif" alt="fediring";
-                                }
                                 a target="_blank" href="https://whats-th.is" {
                                     img src="/assets/img/badges/owo.gif" alt="owo";
                                 }
+                                a target="_blank" href="https://fediring.net" {
+                                    img src="/assets/img/badges/fediring.gif" alt="fediring";
+                                }
+                                img src="/assets/img/badges/hackergirls.gif" alt="hackergirls";
                                 iframe src="https://incr.easrng.net/badge?key=ezripet" style="background: url(https://incr.easrng.net/bg.gif)" title="increment badge" width="88" height="31" frameborder="0" {};
                             }
 
