@@ -121,7 +121,7 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
                         @if discord.status_web == "" {
                             "offline"
                         } @else {
-                            (discord.status_web)
+                            i { (discord.status_web) }
                         }
                     br;
 
@@ -129,7 +129,7 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
                         @if discord.status_mobile == "" {
                             "offline"
                         } @else {
-                            (discord.status_mobile)
+                            i { (discord.status_mobile) }
                         }
                     br;
 
@@ -137,7 +137,7 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
                         @if discord.status_desk == "" {
                             "offline"
                         } @else {
-                            (discord.status_desk)
+                            i { (discord.status_desk) }
                         }
                 }
             }
