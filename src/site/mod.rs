@@ -131,6 +131,7 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                     img src="/assets/img/badges/fediring.gif" alt="fediring";
                                 }
                                 img src="/assets/img/badges/hackergirls.gif" alt="hackergirls";
+                                img src="/assets/img/badges/hrt-e2.gif" alt="HRT 01/24/24";
                                 iframe src="https://incr.easrng.net/badge?key=ezripet" style="background: url(https://incr.easrng.net/bg.gif)" title="increment badge" width="88" height="31" frameborder="0" {};
                             }
 
