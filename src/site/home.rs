@@ -70,10 +70,8 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
                         "@0xEzri"
                     }
                     br;
-                    b { "BSky: " }
-                    a rel="me" target="_blank" href="https://bsky.app/profile/ezrizhu.com" {
-                        "@ezrizhu.com"
-                    }
+                    b { "XMPP: " }
+                    "ezri@semtex.net"
                     br;
                     b { "GitHub: "}
                     a rel="me" target="_blank" href="https://github.com/ezrizhu" {
