@@ -108,7 +108,7 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a target="_blank" href="https://maia.lgbt/" {
                                     img src="/assets/img/badges/maia.gif" alt="maia";
                                 }
-                                a target="_blank" href="https://zvava.org.png" {
+                                a target="_blank" href="https://zvava.org" {
                                     img src="/assets/img/badges/zvava.org.png" alt="zvava.org";
                                 }
                                 a target="_blank" href="https://tilde.town/" {
@@ -138,6 +138,9 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 }
                                 a target="_blank" href="https://whats-th.is" {
                                     img src="/assets/img/badges/owo.gif" alt="owo";
+                                }
+                                a target="_blank" href="https://nightfall.city" {
+                                    img src="/assets/img/badges/nightfall.city.png" alt="nightfall.city";
                                 }
                                 a target="_blank" href="https://fediring.net" {
                                     img src="/assets/img/badges/fediring.gif" alt="fediring";
