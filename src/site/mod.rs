@@ -71,6 +71,12 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a target="_blank" href="https://easrng.net" {
                                     img src="/assets/img/badges/easrng.gif" alt="easrng";
                                 }
+                                a target="_blank" href="https://itzzen.net" {
+                                    img src="/assets/img/badges/itzzennet.png" alt="itzzennet";
+                                }
+                                a target="_blank" href="https://constellatory.png" {
+                                    img src="/assets/img/badges/constellatory.png" alt="constellatory";
+                                }
                                 a target="_blank" href="https://s-mith.github.io/awfulwebsite/" {
                                     img src="/assets/img/badges/lily.gif" alt="lily";
                                 }
@@ -101,6 +107,9 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 }
                                 a target="_blank" href="https://maia.lgbt/" {
                                     img src="/assets/img/badges/maia.gif" alt="maia";
+                                }
+                                a target="_blank" href="https://zvava.org.png" {
+                                    img src="/assets/img/badges/zvava.org.png" alt="zvava.org";
                                 }
                                 a target="_blank" href="https://tilde.town/" {
                                     img src="/assets/img/badges/tildetownpink.gif" alt="tilde.town";
