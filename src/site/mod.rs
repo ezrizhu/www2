@@ -59,7 +59,7 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a target="_blank" href="https://ezri.pet" { 
                                     img src="/assets/img/badges/ezri.png" alt="Ezri";
                                 }
-                                a target="_blank" href="https://as206628.net" { 
+                                a target="_blank" href="https://ezri.cloud" { 
                                     img src="/assets/img/badges/ezricloud.png" alt="EzriCloud";
                                 }
                                 a target="_blank" href="https://kate.pet" { 
@@ -77,45 +77,62 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a target="_blank" href="https://constellatory.png" {
                                     img src="/assets/img/badges/constellatory.png" alt="constellatory";
                                 }
-                                a target="_blank" href="https://s-mith.github.io/awfulwebsite/" {
+                                a target="_blank" href="https://s-mith.github.io/awfulwebsite" {
                                     img src="/assets/img/badges/lily.gif" alt="lily";
                                 }
-                                a target="_blank" href="https://melody.codes/" {
+                                a target="_blank" href="https://melody.codes" {
                                     img src="/assets/img/badges/melody.png" alt="melody";
                                 }
-                                a target="_blank" href="https://wilnil.gay/" {
+                                a target="_blank" href="https://wilnil.gay" {
                                     img src="/assets/img/badges/wilnil_takeone.gif" alt="wilnil";
                                 }
-                                a target="_blank" href="https://graydenn.wtf/" {
+                                a target="_blank" href="https://graydenn.wtf" {
                                     img src="/assets/img/badges/graydenn.png" alt="graydenn";
                                 }
-                                a target="_blank" href="https://adryd.com/" {
+                                a target="_blank" href="https://adryd.com" {
                                     img src="/assets/img/badges/adryd.png" alt="adryd";
                                 }
                                 a target="_blank" href="https://marisakirisame.net" {
                                     img src="/assets/img/badges/marisakirisame.net.png" alt="Marisa";
                                 }
                                 img src="https://marisakirisame.net/battle-of-wits.gif" alt="battle of wits";
-                                a target="_blank" href="https://joscomputing.space/" {
+                                a target="_blank" href="https://joscomputing.space" {
                                     img src="/assets/img/badges/spotlight.gif" alt="spotlight";
                                 }
-                                a target="_blank" href="https://pixilic.com/" {
+                                a target="_blank" href="https://pixilic.com" {
                                     img src="/assets/img/badges/hunter.png" alt="hunter";
                                 }
-                                a target="_blank" href="https://sapphic.moe/" {
+                                a target="_blank" href="https://sapphic.moe" {
                                     img src="/assets/img/badges/sapphic.png" alt="Sapphic Angels";
                                 }
-                                a target="_blank" href="https://maia.lgbt/" {
+                                a target="_blank" href="https://maia.lgbt" {
                                     img src="/assets/img/badges/maia.gif" alt="maia";
+                                }
+                                a target="_blank" href="https://seirdy.one" {
+                                    img src="/assets/img/badges/seirdy.one.png" alt="seirdy";
                                 }
                                 a target="_blank" href="https://zvava.org" {
                                     img src="/assets/img/badges/zvava.org.png" alt="zvava.org";
                                 }
-                                a target="_blank" href="https://tilde.town/" {
+                                a target="_blank" href="https://999eagle.moe" {
+                                    img src="/assets/img/badges/440729.png" alt="⛧-440729";
+                                }
+                                a target="_blank" href="https://noe.sh" {
+                                    img src="/assets/img/badges/noe.sh.png" alt="41666 noe";
+                                }
+                                a target="_blank" href="https://tilde.town" {
                                     img src="/assets/img/badges/tildetownpink.gif" alt="tilde.town";
                                 }
+                                a target="_blank" href="https://envs.net/" {
+                                    img src="/assets/img/badges/envs.net.png" alt="envs.net";
+                                }
                                 img src="/assets/img/badges/xenia-now.gif" alt="xenia-now";
-                                img src="/assets/img/badges/vimlove.gif" alt="vim";
+                                a target="_blank" href="https://neovim.io/" {
+                                    img src="/assets/img/badges/neovim.png" alt="neovim";
+                                }
+                                a target="_blank" href="https://xkcd.com" {
+                                    img src="/assets/img/badges/xkcd.png" alt="xkcd";
+                                }
                                 a target="_blank" href="https://infernocomms.com" {
                                     img src="/assets/img/badges/infernocomms.png" alt="Inferno Communications";
                                 }
@@ -133,7 +150,7 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a target="_blank" href="https://eightyeightthirty.one/#ezri.pet" {
                                     img src="/assets/img/badges/eightyeightthirtyone.png" alt="eightyeightthirtyone";
                                 }
-                                a target="_blank" href="https://yesterweb.org/no-to-web3/" {
+                                a target="_blank" href="https://yesterweb.org/no-to-web3" {
                                     img src="/assets/img/badges/roly-saynotoweb3.gif" alt="say no to web3";
                                 }
                                 a target="_blank" href="https://whats-th.is" {
@@ -142,6 +159,7 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a target="_blank" href="https://nightfall.city" {
                                     img src="/assets/img/badges/nightfall.city.png" alt="nightfall.city";
                                 }
+                                img src="/assets/img/badges/nap.png" alt="not a person";
                                 a target="_blank" href="https://fediring.net" {
                                     img src="/assets/img/badges/fediring.gif" alt="fediring";
                                 }
@@ -151,6 +169,10 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                             }
 
                             p {
+                                "unit ⎈-657a7269, \"ezri\""
+                                br;
+                                " ▌▌▌▖▖▘▘▖▖▌▘▌▌▌▖▖▘▖▖"
+                                br;
                                 "Auto refreshed: " (last_updated)
                                 br;
                                 "Source code "
