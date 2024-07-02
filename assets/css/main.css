@@ -1,6 +1,13 @@
+:root {
+    --bg: oklch(21.56% 0.0286 303.92);
+    --text: oklch(94.11% 0.0397 314.07);
+    --text2: oklch(78.23% 0.1513 336.5);
+    --text3: oklch(80.58% 0.0962 265.46);
+}
+
 body {
-    color: #fafafa;
-    background-color: #19191e;
+    color: var(--text);
+    background-color: var(--bg);
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 1rem;
     display: flex;
@@ -12,7 +19,7 @@ body {
 }
 
 a {
-    color: oklch(82.67% 0.1518 349.81);
+    color: var(--text2)
 }
 
 p {
@@ -25,6 +32,7 @@ h1 {
 
 h3 {
     margin-top: 1rem;
+    color: var(--text3);
 }
 
 p, h3, h2, pre {
@@ -119,15 +127,6 @@ img {
     image-rendering: crisp-edges;
     image-rendering: pixelated;
     image-rendering: -webkit-optimize-contrast;
-}
-
-:root {
-    --white: #f8f7f6;
-    --pearl: #eae2da;
-    --wafer: #dbc6c0;
-    --brown: #a99b94;
-    --blue: #cbc9d4;
-    --pink: #f7b8c6;
 }
 
 /* pride corner */
