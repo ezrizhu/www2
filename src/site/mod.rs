@@ -9,8 +9,8 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                              std::env::var("REF").unwrap_or_else(|_| String::from("Unknown")),
                              std::env::var("COMMIT").unwrap_or_else(|_| String::from("Unknown")),
                              );
-    let description = "Ezri's website";
-    let title = "Ezri";
+    let description = "ezri's website";
+    let title = "ezri";
 
     html! {
         (maud::DOCTYPE)
@@ -24,7 +24,7 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
 
                     title { (title) };
                     meta name="description" content=(description);
-                    meta name="author" content="Ezri";
+                    meta name="author" content="ezri";
 
                     link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png";
                     link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png";
@@ -57,7 +57,7 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                             br;
                             div class="badges" {
                                 a target="_blank" href="https://ezri.pet" { 
-                                    img src="/assets/img/badges/ezri.png" alt="Ezri";
+                                    img src="/assets/img/badges/ezri.png" alt="ezri";
                                 }
                                 a target="_blank" href="https://ezri.cloud" { 
                                     img src="/assets/img/badges/ezricloud.png" alt="EzriCloud";

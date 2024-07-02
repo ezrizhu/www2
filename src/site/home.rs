@@ -24,14 +24,14 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
        };
        */
 
-    let (img, img_link, artist) = ("ezri.webp", "https://v3ss33l.crd.co/", "V3SS33L");
+    let (img, img_link, artist) = ("ezri2.webp", "https://v3ss33l.crd.co/", "V3SS33L");
 
     let img = format!("/assets/img/{}", img);
 
     let content = html! {
         div class="pure-g hero" {
             div class="pure-u-1 pure-u-md-2-3 hero-text" {
-                h1 { "Ezri" }
+                h1 { "ezri" }
                 a target="_blank" href="https://en.pronouns.page/terminology#nonbinary" {
                     img class="flag" src="/assets/img/Nonbinary.webp" alt="Nonbinary flag";
                 }
@@ -44,7 +44,7 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
             }
             div class="pure-u-1 pure-u-md-1-3 hero-img" {
                 a target="_blank" href="https://toyhou.se/finnekit" {
-                    img class="pure-img" src=(img) alt="Ezri's avatar";
+                    img class="pure-img" src=(img) alt="ezri's avatar";
                 }
                 p { "Art by " a target="_blank" href=(img_link) { (artist) } "." }
             }
