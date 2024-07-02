@@ -1,14 +1,18 @@
 body {
-    background-color: var(--pink);
+    color: #fafafa;
+    background-color: #19191e;
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 1rem;
-    color: black;
     display: flex;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
     max-width: 75ch;
+}
+
+a {
+    color: oklch(82.67% 0.1518 349.81);
 }
 
 p {
