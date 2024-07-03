@@ -44,6 +44,11 @@ pre {
     white-space: pre-wrap;
 }
 
+.hero-img p,
+.hero-img img {
+    margin-left: 1rem;
+}
+
 .hero-text {
     order: 2;
 }
