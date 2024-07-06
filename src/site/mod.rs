@@ -125,6 +125,9 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a target="_blank" href="https://moondvsted.neocities.org" {
                                     img src="/assets/img/badges/d-17840-at-moondvsted.gif" alt="moondvsted";
                                 }
+                                a target="_blank" href="https://softkittypa.ws" {
+                                    img src="/assets/img/badges/softkittypaws.png" alt="softkittypaws";
+                                }
                                 a target="_blank" href="https://tilde.town" {
                                     img src="/assets/img/badges/tildetownpink.gif" alt="tilde.town";
                                 }
