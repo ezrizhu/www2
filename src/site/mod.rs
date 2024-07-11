@@ -46,13 +46,18 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                         div class="footer" {
                             p {
                                 a href="https://fediring.net/previous?host=ezri.pet" { "<- Prev" }
-                                " |  Fediring  | "
+                                " |  " a href="https://fediring.net/" { "fediring" } "  | "
                                 a href="https://fediring.net/next?host=ezri.pet" { "Next ->" }
                             }
                             p {
                                 a href="https://skylarhill.me/" { "<- Skylar" }
                                 " |  Hacker Girls  | "
                                 a href="https://nora.codes/" { "Nora ->" }
+                            }
+                            p {
+                                a href="https://https://stellophiliac.github.io/roboring/0x657a7269/previous" { "<- Prev" }
+                                " |  " a href="https://stellophiliac.github.io/roboring" { "roboring" } "  | "
+                                a href="https://https://stellophiliac.github.io/roboring/0x657a7269/next" { "Next ->" }
                             }
                             br;
                             div class="badges" {
