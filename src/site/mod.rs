@@ -55,9 +55,9 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a href="https://nora.codes/" { "Nora ->" }
                             }
                             p {
-                                a href="https://https://stellophiliac.github.io/roboring/0x657a7269/previous" { "<- Prev" }
+                                a href="https://stellophiliac.github.io/roboring/0x657a7269/previous" { "<- Prev" }
                                 " |  " a href="https://stellophiliac.github.io/roboring" { "roboring" } "  | "
-                                a href="https://https://stellophiliac.github.io/roboring/0x657a7269/next" { "Next ->" }
+                                a href="https://stellophiliac.github.io/roboring/0x657a7269/next" { "Next ->" }
                             }
                             br;
                             div class="badges" {
