@@ -136,6 +136,9 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a target="_blank" href="https://libdb.so" {
                                     img src="/assets/img/badges/libdb.so.gif" alt="libdb.so";
                                 }
+                                a target="_blank" href="https://xaselgio.net/" {
+                                    img src="/assets/img/badges/88x31_xaselgio.gif" alt="xaselgio";
+                                }
                                 a target="_blank" href="https://tilde.town" {
                                     img src="/assets/img/badges/tildetownpink.gif" alt="tilde.town";
                                 }
