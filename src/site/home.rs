@@ -56,8 +56,8 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
             div class="pure-u-1 pure-u-md-1-2" {
                 p {
                     b { "Fediverse: " }
-                    a rel="me" target="_blank" href="https://sleepless.cafe/ezri" {
-                        "@ezri@sleepless.cafe"
+                    a rel="me" target="_blank" href="https://starry.cafe/@ezri" {
+                        "@ezri@starry.cafe"
                     }
                     br;
                     b { "Matrix: " }
