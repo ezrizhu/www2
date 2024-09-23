@@ -143,6 +143,15 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a target="_blank" href="https://notnite.com/" {
                                     img src="/assets/img/badges/notnite.png" alt="notnite";
                                 }
+                                a target="_blank" href="https://slonk.ing/" {
+                                    img src="/assets/img/badges/slonk.ing.gif" alt="slonksite";
+                                }
+                                a target="_blank" href="https://matdoes.dev/" {
+                                    img src="/assets/img/badges/mat.png" alt="matdoesdev";
+                                }
+                                a target="_blank" href="https://goldenstack.net/" {
+                                    img src="/assets/img/badges/golden_stack.png" alt="goldenstack";
+                                }
                                 a target="_blank" href="https://tilde.town" {
                                     img src="/assets/img/badges/tildetownpink.gif" alt="tilde.town";
                                 }
