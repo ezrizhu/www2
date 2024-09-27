@@ -110,7 +110,7 @@ async fn main() {
         .route("/ssh", get(ssh::sshpub))
         .route("/.well-known/atproto-did", get(atproto::did))
         .with_state(state)
-        .layer(middleware::from_fn(cachepolicy));
+        .layer(middleware::from_fn(headers));
 
     axum::Server::bind(&"0.0.0.0:3000".parse().expect("Invalid address"))
         .serve(app.into_make_service())
@@ -118,11 +118,12 @@ async fn main() {
         .expect("Server failed");
 }
 
-async fn cachepolicy<B>(req: Request<B>, next: Next<B>) -> (HeaderMap, Response) {
+async fn headers<B>(req: Request<B>, next: Next<B>) -> (HeaderMap, Response) {
     let mut resp_header = HeaderMap::new();
     if req.uri().path().starts_with("/assets") {
         resp_header.insert("Cache-Control", "max-age=86400".parse().unwrap());
     }
+    resp_header.insert("x-clacks-overhead", "GNU Terry Pratchett, Dryken Patch, and all the stars that shine above".parse().unwrap());
     let response = next.run(req).await;
     (resp_header, response)
 }
