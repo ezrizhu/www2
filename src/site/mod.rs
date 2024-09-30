@@ -155,6 +155,9 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a target="_blank" href="https://kibty.town/" {
                                     img src="/assets/img/badges/kibty.town-badge.gif" alt="kibty.town";
                                 }
+                                a target="_blank" href="https://https://zptr.cc//" {
+                                    img src="/assets/img/badges/zeroptr.gif" alt="zeroptr";
+                                }
                                 a target="_blank" href="https://tilde.town" {
                                     img src="/assets/img/badges/tildetownpink.gif" alt="tilde.town";
                                 }
