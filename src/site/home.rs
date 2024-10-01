@@ -71,7 +71,7 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
                     }
                     br;
                     b { "XMPP: " }
-                    "ezri@semtex.net"
+                    "ezri@disroot.org"
                     br;
                     b { "GitHub: "}
                     a rel="me" target="_blank" href="https://github.com/ezrizhu" {
