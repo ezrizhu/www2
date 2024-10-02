@@ -1,9 +1,9 @@
+use super::base;
+use crate::SiteState;
+use axum::extract::State;
 use maud::{html, Markup};
 use std::sync::Arc;
 use tokio::sync::RwLock;
-use axum::extract::State;
-use crate::SiteState;
-use super::base;
 //use rand::Rng;
 
 pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
@@ -15,14 +15,14 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
     let cloud = state.cloud.clone();
 
     /*
-       let mut rng = rand::thread_rng();
-       let (img, img_link, artist) = match rng.gen_range(0..3) {
-       0 => ("ezri.webp", "https://v3ss33l.crd.co/", "V3SS33L"),
-       1 => ("pixel.webp", "https://toyhou.se/StandbySnail", "StandbySnail"),
-       2 => ("blueberry.webp", "https://koiwypher.uwu.ai/#/", "Wypher"),
-       _ => unreachable!(),
-       };
-       */
+    let mut rng = rand::thread_rng();
+    let (img, img_link, artist) = match rng.gen_range(0..3) {
+    0 => ("ezri.webp", "https://v3ss33l.crd.co/", "V3SS33L"),
+    1 => ("pixel.webp", "https://toyhou.se/StandbySnail", "StandbySnail"),
+    2 => ("blueberry.webp", "https://koiwypher.uwu.ai/#/", "Wypher"),
+    _ => unreachable!(),
+    };
+    */
 
     let (img, img_link, artist) = ("ezri2.webp", "https://v3ss33l.crd.co/", "V3SS33L");
 
@@ -102,7 +102,7 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
                     }
                     br;
                     b { "Irc: " }
-                    "ezri on libera, hackint" 
+                    "ezri on libera, hackint"
                 }
             }
         }
@@ -115,7 +115,7 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
                         br;
                     "Custom status: " (discord.custom_status)
                         br;
-                    "Web client: " 
+                    "Web client: "
                         @if discord.status_web == "" {
                             "offline"
                         } @else {
@@ -123,7 +123,7 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
                         }
                     br;
 
-                    "Mobile client: " 
+                    "Mobile client: "
                         @if discord.status_mobile == "" {
                             "offline"
                         } @else {
@@ -131,7 +131,7 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
                         }
                     br;
 
-                    "Desktop client: " 
+                    "Desktop client: "
                         @if discord.status_desk == "" {
                             "offline"
                         } @else {

@@ -1,7 +1,5 @@
+use axum::http::HeaderMap;
 use std::fs;
-use axum::{
-    http::HeaderMap,
-};
 
 pub async fn sshpub() -> (HeaderMap, String) {
     let mut resp_header = HeaderMap::new();

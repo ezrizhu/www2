@@ -1,21 +1,22 @@
-use std::sync::Arc;
-use tokio::sync::RwLock;
-use log::{info, error};
 use axum::{
-    response::Html,
-    response::Response,
-    middleware::{self, Next},
-    routing::{get, get_service},
-    Router,
     http::header::HeaderMap,
     http::Request,
+    middleware::{self, Next},
+    response::Html,
+    response::Response,
+    routing::{get, get_service},
+    Router,
 };
+use log::{error, info};
 use serde::{Deserialize, Serialize};
+use std::sync::Arc;
+use tokio::sync::RwLock;
 use tower_http::services::ServeDir;
-mod site;
-mod update;
-mod ssh;
 mod atproto;
+mod pgp;
+mod site;
+mod ssh;
+mod update;
 
 async fn health() -> Html<String> {
     Html(String::from("OK"))
@@ -109,6 +110,11 @@ async fn main() {
         .route("/", get(site::home::home))
         .route("/ssh", get(ssh::sshpub))
         .route("/.well-known/atproto-did", get(atproto::did))
+        .route("/.well-known/openpgpkey/hu/policy", get(pgp::policy))
+        .route(
+            "/.well-known/openpgpkey/hu/s8y7oh5xrdpu9psba3i5ntk64ohouhga",
+            get(pgp::pubkey),
+        )
         .with_state(state)
         .layer(middleware::from_fn(headers));
 
@@ -123,7 +129,12 @@ async fn headers<B>(req: Request<B>, next: Next<B>) -> (HeaderMap, Response) {
     if req.uri().path().starts_with("/assets") {
         resp_header.insert("Cache-Control", "max-age=86400".parse().unwrap());
     }
-    resp_header.insert("x-clacks-overhead", "GNU Terry Pratchett, Dryken Patch, and all the stars that shine above".parse().unwrap());
+    resp_header.insert(
+        "x-clacks-overhead",
+        "GNU Terry Pratchett, Dryken Patch, and all the stars that shine above"
+            .parse()
+            .unwrap(),
+    );
     let response = next.run(req).await;
     (resp_header, response)
 }

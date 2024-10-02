@@ -1,14 +1,15 @@
-use maud::{html, Markup};
 use crate::SiteState;
+use maud::{html, Markup};
 pub mod home;
 
 pub fn base(content: Markup, state: SiteState) -> Markup {
     let last_updated = state.last_updated.clone();
-    let build_info = format!("Built on: {} • Ref: {} • Commit: {}",
-                             std::env::var("TIME").unwrap_or_else(|_| String::from("Unknown")),
-                             std::env::var("REF").unwrap_or_else(|_| String::from("Unknown")),
-                             std::env::var("COMMIT").unwrap_or_else(|_| String::from("Unknown")),
-                             );
+    let build_info = format!(
+        "Built on: {} • Ref: {} • Commit: {}",
+        std::env::var("TIME").unwrap_or_else(|_| String::from("Unknown")),
+        std::env::var("REF").unwrap_or_else(|_| String::from("Unknown")),
+        std::env::var("COMMIT").unwrap_or_else(|_| String::from("Unknown")),
+    );
     let description = "ezri's website";
     let title = "ezri";
 
@@ -61,13 +62,13 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                             }
                             br;
                             div class="badges" {
-                                a target="_blank" href="https://ezri.pet" { 
+                                a target="_blank" href="https://ezri.pet" {
                                     img src="/assets/img/badges/ezri.png" alt="ezri";
                                 }
-                                a target="_blank" href="https://ezri.cloud" { 
+                                a target="_blank" href="https://ezri.cloud" {
                                     img src="/assets/img/badges/ezricloud.png" alt="EzriCloud";
                                 }
-                                a target="_blank" href="https://kate.pet" { 
+                                a target="_blank" href="https://kate.pet" {
                                     img src="/assets/img/badges/kate.gif" alt="kate.pet";
                                 }
                                 a target="_blank" href="https://haylinmoore.com" {
