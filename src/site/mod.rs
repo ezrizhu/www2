@@ -178,22 +178,20 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a target="_blank" href="https://infernocomms.com" {
                                     img src="/assets/img/badges/infernocomms.png" alt="Inferno Communications";
                                 }
-                                a target="_blank" href="https://glauca.digital/" {
-                                    img src="/assets/img/badges/glauca.gif" alt="Glauca Digital";
+                                a target="_blank" href="https://matrix.org/" {
+                                    img src="/assets/img/badges/matrix.png" alt="Matrix";
                                 }
-                                a target="_blank" href="https://xenyth.net/?affid=3" {
-                                    img src="/assets/img/badges/xenyth.png" alt="xenyth cloud";
+                                a target="_blank" href="https://nixos.org/" {
+                                    img src="/assets/img/badges/nixos.gif" alt="Nixos";
                                 }
                                 img src="/assets/img/badges/aperture_labs.jpg" alt="aperture_labs";
                                 img src="/assets/img/badges/nb_noproblem.jpg" alt="nonbinary_noproblem";
+                                img src="/assets/img/badges/transrightsnow.webp" alt="transrightsnow";
                                 a target="_blank" href="https://www.mabsland.com/Adoption.html" {
                                     img src="/assets/img/badges/Censor_PGc.gif" alt="Censorship Panda: PG";
                                 }
                                 a target="_blank" href="https://eightyeightthirty.one/#ezri.pet" {
                                     img src="/assets/img/badges/eightyeightthirtyone.png" alt="eightyeightthirtyone";
-                                }
-                                a target="_blank" href="https://yesterweb.org/no-to-web3" {
-                                    img src="/assets/img/badges/roly-saynotoweb3.gif" alt="say no to web3";
                                 }
                                 a target="_blank" href="https://whats-th.is" {
                                     img src="/assets/img/badges/owo.gif" alt="owo";
