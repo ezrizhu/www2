@@ -9,8 +9,8 @@ use tokio::sync::RwLock;
 pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
     let state = state.read().await;
     let workstation = state.workstation.clone();
-    let val = state.val.clone();
-    let steam = state.steam.clone();
+    let _val = state.val.clone();
+    let _steam = state.steam.clone();
     let discord = state.discord.clone();
     let cloud = state.cloud.clone();
 
@@ -31,19 +31,22 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
     let content = html! {
         div class="pure-g hero" {
             div class="pure-u-1 pure-u-md-2-3 hero-text" {
-                h1 { "ezri" }
+                h1 {
+                    "ezri " 
                 a target="_blank" href="https://en.pronouns.page/terminology#nonbinary" {
                     img class="flag" src="/assets/img/Nonbinary.webp" alt="Nonbinary flag";
                 }
                 a target="_blank" href="https://en.pronouns.page/terminology#sapphic" {
                     img class="flag" src="/assets/img/Sapphic.webp" alt="Sapphic flag";
                 }
-                p { "I am a 20 y/o computer science student from NYC that runs a small internet hosting service with its own ASN. I currently work in academia as a research assistant." }
+                }
+                p { "I am a 20 y/o computer science student from NYC that runs a small internet hosting service with its own ASN." }
+                p { "I currently work in academia as research assistants for two groups, one in computer systems, and one in computer networking." }
                 p { "Feel free to have a look around this website, and I hope you have a nice rest of your day." }
                 p { "Please don't hesitate to reach out if you'd like to chat or have any questions." }
             }
             div class="pure-u-1 pure-u-md-1-3 hero-img" {
-                a target="_blank" href="https://toyhou.se/finnekit" {
+                a target="_blank" href="https://toyhou.se/24606420.ezri" {
                     img class="pure-img" src=(img) alt="ezri's avatar";
                 }
                 p { "Art by " a target="_blank" href=(img_link) { (artist) } "." }
@@ -55,35 +58,9 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
         div class="pure-g hero" {
             div class="pure-u-1 pure-u-md-1-2" {
                 p {
-                    b { "Fediverse: " }
-                    a rel="me" target="_blank" href="https://starry.cafe/@ezri" {
-                        "@ezri@starry.cafe"
-                    }
-                    br;
-                    b { "Matrix: " }
-                    a rel="me" target="_blank" href="https://matrix.to/#/@ezri:envs.net" {
-                        "@ezri:envs.net"
-                    }
-                    br;
-                    b { "Twitter: " }
-                    a rel="me" target="_blank" href="https://twitter.com/0xEzri" {
-                        "@0xEzri"
-                    }
-                    br;
-                    b { "XMPP: " }
-                    "ezri@disroot.org"
-                    br;
-                    b { "GitHub: "}
-                    a rel="me" target="_blank" href="https://github.com/ezrizhu" {
-                        "@ezrizhu"
-                    }
-                }
-            }
-            div class="pure-u-1 pure-u-md-1-2" {
-                p {
-                    b { "Signal: " }
-                    a rel="me" target="_blank" href="https://signal.me/#eu/ZhPPlw2hqcjo2BO1QEmD-XxMfVCtCG5n8gOLmV4yxpPcsBuJZFJBqblyOvo7XrOM" {
-                        "ezri.01"
+                    b { "Website: " }
+                    a rel="me" target="_blank" href="https://ezrizhu.com" {
+                        "ezrizhu.com"
                     }
                     br;
                     b { "Email: " }
@@ -91,18 +68,48 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
                         "me@ezri.pet"
                     }
                     br;
-                    b { "pronouns.page: " }
-                    a target="_blank" href="https://en.pronouns.page/@ezrieh" {
-                        "@ezrieh"
+                    b { "Matrix: " }
+                    a rel="me" target="_blank" href="https://matrix.to/#/@ezri:envs.net" {
+                        "@ezri:envs.net"
+                    }
+                    br;
+                    b { "Fediverse: " }
+                    a rel="me" target="_blank" href="https://starry.cafe/@ezri" {
+                        "@ezri@starry.cafe"
+                    }
+                    br;
+                    b { "Signal: " }
+                    a rel="me" target="_blank" href="https://signal.me/#eu/ZhPPlw2hqcjo2BO1QEmD-XxMfVCtCG5n8gOLmV4yxpPcsBuJZFJBqblyOvo7XrOM" {
+                        "ezri.01"
+                    }
+                }
+            }
+            div class="pure-u-1 pure-u-md-1-2" {
+                p {
+                    b { "PGP & ID Proofs: " }
+                    a rel="me" target="_blank" href="https://keyoxide.org/me%40ezri.pet" {
+                        "wkd:me@ezri.pet"
+                    }
+                    br;
+                    b { "Email (alt): " }
+                    a target="_blank" href="mailto:ezrieh@riseup.net" {
+                        "ezrieh@riseup.net"
+                    }
+                    br;
+                    b { "XMPP: " }
+                    a target="_blank" href="xmpp:ezri@disroot.org" {
+                        "ezri@disroot.org"
+                    }
+                    br;
+                    b { "Twitter: " }
+                    a rel="me" target="_blank" href="https://twitter.com/0xEzri" {
+                        "@0xEzri"
                     }
                     br;
                     b { "Telegram: " }
                     a target="_blank" href="https://t.me/ezrizhu" {
                         "@ezrizhu"
                     }
-                    br;
-                    b { "Irc: " }
-                    "ezri on libera, hackint"
                 }
             }
         }
@@ -111,7 +118,10 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
             div class="pure-u-1 pure-u-md-1-2" {
                 h3 { "Discord" }
                 p {
-                    "Username: ezrieh"
+                    "Username: "
+                    a target="_blank" href="https://discord.com/users/691734266458931341" {
+                        "ezrieh"
+                    }
                         br;
                     "Custom status: " (discord.custom_status)
                         br;
@@ -141,45 +151,29 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
             }
 
             div class="pure-u-1 pure-u-md-1-2" {
-                h3 { "Valorant" }
-                p {
-                    pre { (val) };
-                }
-            }
-
-            div class="pure-u-1 pure-u-md-1-2" {
-                h3 { "Steam" }
-                p {
-                    "Profile: " a target="_blank" href=(steam.profile_url) { (steam.persona_name) }
-                    br;
-                    "Currently: " (steam.persona_state)
-                        @if steam.is_gaming {
-                            br;
-                            "Playing: " a target="_blank" href=(steam.game_url) { (steam.game_extra_info) }
-                        };
-                    br;
-                    "Last log off: " (steam.last_logoff)
-                }
-            }
-
-            div class="pure-u-1 pure-u-md-1-2" {
                 h3 { "EzriCloud" }
                 p {
+                    "Website: "
+                    a target="_blank" href="https://ezri.cloud" {
+                        "ezri.cloud"
+                    }
+                    br;
                     "AS: 206628"
                         br;
                     "Status: "
                         @if cloud.is_down {
-                            "Down since" (cloud.down_since)
+                            "Outage since" (cloud.down_since)
                         } @else {
                             "All systems operational"
                         }
                     br;
-                    "nic-hdl: EZRI-RIPE, ZHUEZ-ARIN"
+                    "nic-hdl: EZRI-RIPE"
+                    br;
+                    "nic-hdl: ZHUEZ-ARIN"
                 }
             }
 
         }
-
 
         h3 { "Workstation status" }
         pre { (workstation) };
