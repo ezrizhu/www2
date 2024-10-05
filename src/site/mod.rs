@@ -68,6 +68,7 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a target="_blank" href="https://ezri.cloud" {
                                     img src="/assets/img/badges/ezricloud.png" alt="EzriCloud";
                                 }
+                                img src="/assets/img/badges/wolfgirl.gif" alt="wolfgirl.systems";
                                 a target="_blank" href="https://kate.pet" {
                                     img src="/assets/img/badges/kate.gif" alt="kate.pet";
                                 }
