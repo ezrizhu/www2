@@ -190,7 +190,9 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 }
                                 img src="/assets/img/badges/aperture_labs.jpg" alt="aperture_labs";
                                 img src="/assets/img/badges/nb_noproblem.jpg" alt="nonbinary_noproblem";
-                                img src="/assets/img/badges/transrightsnow.webp" alt="transrightsnow";
+                                a target="_blank" href="https://hrc.org/transgender" {
+                                    img src="/assets/img/badges/transrightsnow.webp" alt="transrightsnow";
+                                }
                                 a target="_blank" href="https://www.mabsland.com/Adoption.html" {
                                     img src="/assets/img/badges/Censor_PGc.gif" alt="Censorship Panda: PG";
                                 }
