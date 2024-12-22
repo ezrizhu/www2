@@ -165,9 +165,6 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a target="_blank" href="https://nullablevo.id.au/" {
                                     img src="/assets/img/badges/avery.png" alt="nullable bytes";
                                 }
-                                a target="_blank" href="https://vmfunc.re/" {
-                                    img src="/assets/img/badges/vmfunc.png" alt="vmfunc";
-                                }
                                 a target="_blank" href="https://zptr.cc/" {
                                     img src="/assets/img/badges/zeroptr.gif" alt="zeroptr";
                                 }
