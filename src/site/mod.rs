@@ -45,6 +45,7 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                         a id="prideflag" href="https://www.hrw.org/topic/lgbt-rights" target="_blank" { img src="/assets/img/pride.svg" alt="progressive pride flag"; }
                         (content);
                         div class="footer" {
+                            div class="rc-scout" {}
                             p {
                                 a href="https://fediring.net/previous?host=ezri.pet" { "<- Prev" }
                                 " |  " a href="https://fediring.net/" { "fediring" } "  | "
@@ -241,6 +242,7 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                         }
                     }
 
+                    script async defer src="https://www.recurse-scout.com/loader.js?t=b5dda155bba0bc72c97da128e1929d96" {}
                 }
             }
     }
