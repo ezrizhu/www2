@@ -82,7 +82,7 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                     img src="/assets/img/badges/easrng.gif" alt="easrng";
                                 }
                                 a target="_blank" href="https://girlboss.ceo/" {
-                                    img src="/assets/img/badges/june.svg" alt="june";
+                                    img src="/assets/img/badges/june.png" alt="june";
                                 }
                                 a target="_blank" href="https://s-mith.github.io/awfulwebsite" {
                                     img src="/assets/img/badges/lily.gif" alt="lily";
@@ -174,6 +174,9 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 }
                                 a target="_blank" href="https://giannirosato.com/" {
                                     img src="/assets/img/badges/gb82_88x31.webp" alt="gianni";
+                                }
+                                a target="_blank" href="https://estela.moe/" {
+                                    img src="/assets/img/badges/estela.png" alt="estela";
                                 }
                                 a target="_blank" href="https://tilde.town" {
                                     img src="/assets/img/badges/tildetownpink.gif" alt="tilde.town";
