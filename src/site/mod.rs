@@ -221,6 +221,9 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a target="_blank" href="https://fediring.net" {
                                     img src="/assets/img/badges/fediring.gif" alt="fediring";
                                 }
+                                a target="_blank" href="https://www.recurse.com" {
+                                    img src="/assets/img/badges/rc.png" alt="https://www.recurse.com/scout/click?t=b5dda155bba0bc72c97da128e1929d96";
+                                }
                                 img src="/assets/img/badges/hackergirls.gif" alt="hackergirls";
                                 img src="/assets/img/badges/hrt-e2.gif" alt="HRT 01/24/24";
                                 iframe src="https://incr.easrng.net/badge?key=ezripet" style="background: url(https://incr.easrng.net/bg.gif)" title="increment badge" width="88" height="31" frameborder="0" {};
