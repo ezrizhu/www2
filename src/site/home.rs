@@ -24,7 +24,7 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
     };
     */
 
-    let (img, img_link, artist) = ("ezri2.webp", "https://v3ss33l.crd.co/", "V3SS33L");
+    let (img, img_link, artist) = ("ezri2.webp", "https://fatalterror3.crd.co/", "V3SS33L");
 
     let img = format!("/assets/img/{}", img);
 
