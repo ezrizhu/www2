@@ -202,7 +202,7 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 }
                                 img src="/assets/img/badges/aperture_labs.jpg" alt="aperture_labs";
                                 img src="/assets/img/badges/nb_noproblem.jpg" alt="nonbinary_noproblem";
-                                a target="_blank" href="https://hrc.org/transgender" {
+                                a target="_blank" href="https://www.hrc.org/resources/transgender" {
                                     img src="/assets/img/badges/transrightsnow.webp" alt="transrightsnow";
                                 }
                                 a target="_blank" href="https://www.mabsland.com/Adoption.html" {
