@@ -33,12 +33,6 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
             div class="pure-u-1 pure-u-md-2-3 hero-text" {
                 h1 {
                     "ezri " 
-                a target="_blank" href="https://en.pronouns.page/terminology#nonbinary" {
-                    img class="flag" src="/assets/img/Nonbinary.webp" alt="Nonbinary flag";
-                }
-                a target="_blank" href="https://en.pronouns.page/terminology#sapphic" {
-                    img class="flag" src="/assets/img/Sapphic.webp" alt="Sapphic flag";
-                }
                 }
                 p { "I am a 20 y/o computer science student from NYC that runs a small internet hosting service with its own ASN." }
                 p { "I currently work in academia as research assistants for two groups, one in computer systems, and one in computer networking." }
