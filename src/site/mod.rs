@@ -181,6 +181,9 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a target="_blank" href="https://alyxia.dev/" {
                                     img src="/assets/img/badges/alyxia.png" alt="alyxia";
                                 }
+                                a target="_blank" href="https://umbresp.cat/" {
+                                    img src="/assets/img/badges/umbresp.gif" alt="umbresp";
+                                }
                                 a target="_blank" href="https://tilde.town" {
                                     img src="/assets/img/badges/tildetownpink.gif" alt="tilde.town";
                                 }
