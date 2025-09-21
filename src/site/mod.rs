@@ -203,6 +203,9 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a target="_blank" href="https://infernocomms.com" {
                                     img src="/assets/img/badges/infernocomms.png" alt="Inferno Communications";
                                 }
+                                a target="_blank" href="https://www.as1003.net" {
+                                    img src="/assets/img/badges/andrewnet.png" alt="AndrewNet";
+                                }
                                 a target="_blank" href="https://matrix.org/" {
                                     img src="/assets/img/badges/matrix.png" alt="Matrix";
                                 }
