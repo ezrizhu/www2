@@ -190,6 +190,12 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a target="_blank" href="https://azaleacolburn.dev/" {
                                     img src="/assets/img/badges/azalea.png" alt="azalea";
                                 }
+                                a target="_blank" href="https://acdw.net/" {
+                                    img src="/assets/img/badges/acdw.gif" alt="acdw";
+                                }
+                                a target="_blank" href="https://seized.fyi/" {
+                                    img src="/assets/img/badges/seized.gif" alt="seized";
+                                }
                                 a target="_blank" href="https://tilde.town" {
                                     img src="/assets/img/badges/tildetownpink.gif" alt="tilde.town";
                                 }
