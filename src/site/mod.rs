@@ -196,6 +196,9 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a target="_blank" href="https://pydis.wtf/" {
                                     img src="/assets/img/badges/joebanks.png" alt="joe banks";
                                 }
+                                a target="_blank" href="https://bunbun.dev/" {
+                                    img src="/assets/img/badges/bunbun.dev.gif" alt="winter";
+                                }
                                 a target="_blank" href="https://seized.fyi/" {
                                     img src="/assets/img/badges/seized.gif" alt="seized";
                                 }
