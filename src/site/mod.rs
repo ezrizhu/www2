@@ -199,6 +199,12 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a target="_blank" href="https://bunbun.dev/" {
                                     img src="/assets/img/badges/bunbun.dev.gif" alt="winter";
                                 }
+                                a target="_blank" href="https://isabelroses.com/" {
+                                    img src="/assets/img/badges/isabelroses.gif" alt="isabelroses";
+                                }
+                                a target="_blank" href="https://joe.lothan.net/" {
+                                    img src="/assets/img/badges/ert.png" alt="joelothan";
+                                }
                                 a target="_blank" href="https://seized.fyi/" {
                                     img src="/assets/img/badges/seized.gif" alt="seized";
                                 }
