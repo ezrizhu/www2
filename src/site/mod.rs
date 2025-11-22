@@ -205,6 +205,9 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a target="_blank" href="https://joe.lothan.net/" {
                                     img src="/assets/img/badges/ert.png" alt="joelothan";
                                 }
+                                a target="_blank" href="https://cpli.dev/" {
+                                    img src="/assets/img/badges/cpli.gif" alt="cpli";
+                                }
                                 a target="_blank" href="https://seized.fyi/" {
                                     img src="/assets/img/badges/seized.gif" alt="seized";
                                 }
