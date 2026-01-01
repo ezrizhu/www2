@@ -47,14 +47,14 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
             }
         }
 
-        h3 { "!!temporary 39C3 Info!!" }
-            div class="pure-u-1" {
-                p {
-                    b { "DECT: " }
-                    "WRFF"
-                    br;
-                }
-            }
+        //h3 { "!!temporary 39C3 Info!!" }
+        //div class="pure-u-1" {
+        //    p {
+        //        b { "DECT: " }
+        //        "WRFF"
+        //        br;
+        //    }
+        //}
 
         h3 { "Socials" }
 
