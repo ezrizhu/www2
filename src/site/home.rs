@@ -73,7 +73,7 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
                     br;
                     b { "Matrix: " }
                     a rel="me" target="_blank" href="https://matrix.to/#/@ezri:private.coffee" {
-                        "@ezri:envs.net"
+                        "@ezri:private.coffee"
                     }
                     br;
                     b { "Fediverse: " }
