@@ -35,7 +35,7 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
                     "ezri " 
                 }
                 p { "I am a 21 y/o computer science student from NYC that runs a small internet hosting service with its own ASN." }
-                p { "I currently work in academia as research assistants for two groups, one in computer systems, and one in computer networking." }
+                p { "I currently work on DevOps and HPC clusters for a small engineering firm." }
                 p { "Feel free to have a look around this website, and I hope you have a nice rest of your day." }
                 p { "Please don't hesitate to reach out if you'd like to chat or have any questions." }
             }
