@@ -63,6 +63,9 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                             }
                             br;
                             div class="badges" {
+                                a target="_blank" href="https://badge.les.bi" {
+                                    img src="/assets/img/badges/flag.png" alt="flag";
+                                }
                                 a target="_blank" href="https://ezri.pet" {
                                     img src="/assets/img/badges/ezri.png" alt="ezri";
                                 }
@@ -210,6 +213,9 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 }
                                 a target="_blank" href="https://chellipse.xyz" {
                                     img src="/assets/img/badges/chell.png" alt="chell";
+                                }
+                                a target="_blank" href="https://les.bi" {
+                                    img src="/assets/img/badges/maeve.png" alt="maeve";
                                 }
                                 a target="_blank" href="https://seized.fyi/" {
                                     img src="/assets/img/badges/seized.gif" alt="seized";
