@@ -81,9 +81,6 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a target="_blank" href="https://easrng.net" {
                                     img src="/assets/img/badges/easrng.gif" alt="easrng";
                                 }
-                                a target="_blank" href="https://girlboss.ceo/" {
-                                    img src="/assets/img/badges/june.png" alt="june";
-                                }
                                 a target="_blank" href="https://s-mith.github.io/awfulwebsite" {
                                     img src="/assets/img/badges/lily.gif" alt="lily";
                                 }
@@ -166,9 +163,6 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a target="_blank" href="https://lina.sh/" {
                                     img src="/assets/img/badges/lina.gif" alt="lina";
                                 }
-                                a target="_blank" href="https://aubrey.rs/" {
-                                    img src="/assets/img/badges/aubrey.png" alt="aubrey";
-                                }
                                 a target="_blank" href="https://bun-e.fyi/" {
                                     img src="/assets/img/badges/3bunbutton.png" alt="ecool";
                                 }
@@ -213,6 +207,9 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 }
                                 a target="_blank" href="https://midnight-cinders.com/" {
                                     img src="/assets/img/badges/midnight-cinders.png" alt="midnight-cinders";
+                                }
+                                a target="_blank" href="https://chellipse.xyz" {
+                                    img src="/assets/img/badges/chell.png" alt="chell";
                                 }
                                 a target="_blank" href="https://seized.fyi/" {
                                     img src="/assets/img/badges/seized.gif" alt="seized";
