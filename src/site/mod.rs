@@ -52,7 +52,7 @@ pub fn base(content: Markup, state: SiteState) -> Markup {
                                 a href="https://fediring.net/next?host=ezri.pet" { "Next ->" }
                             }
                             p {
-                                a href="https://stellarskylark.srht.site/" { "<- Skylar" }
+                                a href="https://voidsleeper.xyz" { "<- Skylar" }
                                 " |  Hacker Girls  | "
                                 a href="https://nora.codes/" { "Nora ->" }
                             }
