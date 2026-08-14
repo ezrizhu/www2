@@ -131,7 +131,7 @@ async fn headers<B>(req: Request<B>, next: Next<B>) -> (HeaderMap, Response) {
     }
     resp_header.insert(
         "x-clacks-overhead",
-        "GNU Terry Pratchett, Dryken Patch, and all the stars that shine above"
+        "GNU Terry Pratchett, Dryken Patch, Holli, and all the stars that shine above"
             .parse()
             .unwrap(),
     );

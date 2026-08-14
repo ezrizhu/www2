@@ -32,12 +32,10 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
         div class="pure-g hero" {
             div class="pure-u-1 pure-u-md-2-3 hero-text" {
                 h1 {
-                    "ezri " 
+                    "ezri :)" 
                 }
-                p { "I am a 21 y/o computer science student from NYC that runs a small internet hosting service with its own ASN." }
+                p { "I love computers and understanding how the world works." }
                 p { "I currently work on DevOps and HPC clusters for a small engineering firm." }
-                p { "Feel free to have a look around this website, and I hope you have a nice rest of your day." }
-                p { "Please don't hesitate to reach out if you'd like to chat or have any questions." }
             }
             div class="pure-u-1 pure-u-md-1-3 hero-img" {
                 a target="_blank" href="https://toyhou.se/24606420.ezri" {
