@@ -34,8 +34,8 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
                 h1 {
                     "ezri :)" 
                 }
-                p { "I love computers and understanding how the world works." }
-                p { "I currently work on DevOps and HPC clusters for a small engineering firm." }
+                p { "I love computers and understanding how the world works. I love biking around NYC and traveling to see friends." }
+                p { "I am currently working in a small engineering firm on HPC, DevOps, and production infrastructure." }
             }
             div class="pure-u-1 pure-u-md-1-3 hero-img" {
                 a target="_blank" href="https://toyhou.se/24606420.ezri" {
@@ -73,6 +73,14 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
                     a rel="me" target="_blank" href="https://matrix.to/#/@ezri:private.coffee" {
                         "@ezri:private.coffee"
                     }
+                }
+            }
+            div class="pure-u-1 pure-u-md-1-2" {
+                p {
+                    b { "Twitter: " }
+                    a rel="me" target="_blank" href="https://twitter.com/0xEzri" {
+                        "@0xEzri"
+                    }
                     br;
                     b { "Fediverse: " }
                     a rel="me" target="_blank" href="https://starry.cafe/@ezri" {
@@ -82,34 +90,6 @@ pub async fn home(State(state): State<Arc<RwLock<SiteState>>>) -> Markup {
                     b { "Signal: " }
                     a rel="me" target="_blank" href="https://signal.me/#eu/ZhPPlw2hqcjo2BO1QEmD-XxMfVCtCG5n8gOLmV4yxpPcsBuJZFJBqblyOvo7XrOM" {
                         "ezri.01"
-                    }
-                }
-            }
-            div class="pure-u-1 pure-u-md-1-2" {
-                p {
-                    b { "PGP & ID Proofs: " }
-                    a rel="me" target="_blank" href="https://keyoxide.org/me%40ezri.pet" {
-                        "wkd:me@ezri.pet"
-                    }
-                    br;
-                    b { "Email (alt): " }
-                    a target="_blank" href="mailto:ezrieh@riseup.net" {
-                        "ezrieh@riseup.net"
-                    }
-                    br;
-                    b { "XMPP: " }
-                    a target="_blank" href="xmpp:ezri@disroot.org" {
-                        "ezri@disroot.org"
-                    }
-                    br;
-                    b { "Twitter: " }
-                    a rel="me" target="_blank" href="https://twitter.com/0xEzri" {
-                        "@0xEzri"
-                    }
-                    br;
-                    b { "Telegram: " }
-                    a target="_blank" href="https://t.me/ezrizhu" {
-                        "@ezrizhu"
                     }
                 }
             }
